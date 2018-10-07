@@ -4,3 +4,36 @@ Design pattern Iterator provides universal sequential access to the elements of 
 
 Diagram:</br>
 ![Image alt](https://github.com/gvozdev1986/Pattern-Iterator/blob/master/DiagramPatternIterator.png)
+
+
+Example:
+
+```java
+    //String array
+    String[] array = {"one", "two", "tree", "four", "five"};
+```
+
+
+```java
+
+    public static void main(String[] args) {
+    
+        ConcreteAggregate concreteAggregate = new ConcreteAggregate();
+        Iterator iterator = concreteAggregate.getIterator();
+
+        while (iterator.hasNext()){
+            System.out.println((String) iterator.next());
+        }
+
+    }
+
+```
+
+RESULT:
+```text
+   one
+   two
+   tree
+   four
+   five    
+```
